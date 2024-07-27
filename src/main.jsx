@@ -7,17 +7,26 @@ import { Hero } from "./components/hero"
 import { Navbar } from './components/navbar';
 import { Footer } from './components/footer';
 
-const App = () =>
-    <div>
-        <Navbar />
-        <div class="container">
-            <main class="bg:rgba(0,108,46, 0.1) w:100vw max-width:1300px" style="margin: 0 auto">
-            <Hero />
-            <div class="h:100rem">HELLO</div>
-            <Footer />
-            </main>
 
+
+const Card = () =>
+    <div class="d:block w:320px h:300px min-width:320px">
+        <h1 class="f:bold bg:green">Header</h1>
+        <div class="bg:beryl-70 h:100%">
+            Content
         </div>
     </div>
+ 
+
+const App = () =>
+  <div class="container">
+        <Navbar />
+        <Hero />
+        <h1 class="text-align:center">PRODUCT</h1>
+        <div class="main">
+            { [...Array(10)].map(() => <Card />) }
+        </div>
+        <Footer />
+  </div>
 
 mount(document.getElementById("app"), App)
