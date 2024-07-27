@@ -1,1 +1,14 @@
 @import '@master/normal.css';
+
+body {
+  background-color: rgba(0,108,46, 0.1);
+  overflow: hidden;
+}
+
+.container {
+  
+  height: 100vh;
+  margin: 0 auto;
+  overflow: auto;
+}
+
