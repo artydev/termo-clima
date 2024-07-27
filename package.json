@@ -12,7 +12,8 @@
     "vite": "^4.1.0"
   },
   "dependencies": {
-    "umai": "^0.2.6",
-    "unmai": "^1.0.0"
+    "@master/css": "^1.37.8",
+    "@master/normal.css": "^3.1.0",
+    "umai": "^0.2.6"
   }
 }
